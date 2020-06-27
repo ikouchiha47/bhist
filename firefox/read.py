@@ -2,6 +2,7 @@ import os
 import sys
 import sqlite3
 import subprocess
+import lib
 
 # copy sqlite3 dbs because they might be locked
 # file name as <profile>_places.sqlite
@@ -13,8 +14,8 @@ def __copy(source_file):
     subprocess.call("cp {source} {dest}".format(source=source_file, dest=dest_file), shell=True)
     return dest_file
 
-def __delete(dest_file):
-    os.remove(dest_file)
+def __delete(dest_files):
+    for f in dest_files: os.remove(f)
 
 def __fetch_history(db_file):
     db = sqlite3.connect(db_file)
@@ -43,9 +44,10 @@ def call(db_files):
     
     history = { db_file: __fetch_history(db_file) for db_file in dest_db_files }
     
-    for f in dest_db_files: __delete(f)
+    lib.evt.emit("firefox:dbs:delete", dest_db_files)
 
     return history
 
+lib.evt.on("firefox:dbs:delete", __delete)
 
-print(call(sys.argv[1:]))
+#print(call(sys.argv[1:]))
