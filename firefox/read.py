@@ -1,8 +1,7 @@
 import os
-import sys
-import sqlite3
 import subprocess
 import lib
+from firefox import store
 
 # copy sqlite3 dbs because they might be locked
 # file name as <profile>_places.sqlite
@@ -16,17 +15,6 @@ def __copy(source_file):
 
 def __delete(dest_files):
     for f in dest_files: os.remove(f)
-
-def __fetch_history(db_file):
-    db = sqlite3.connect(db_file)
-    cursor = db.cursor()
-
-    select_statement = "select url, frecency, last_visit_date from moz_places;"
-    cursor.execute(select_statement)
-
-    results = cursor.fetchall()
-    
-    return[(url, recency, last_visit) for url, recency, last_visit in results]
 
 """
 call(db_files)
@@ -42,7 +30,7 @@ def call(db_files):
     history = {}
     dest_db_files = [__copy(src) for src in db_files]
     
-    history = { db_file: __fetch_history(db_file) for db_file in dest_db_files }
+    history = { db_file: store.urls(db_file) for db_file in dest_db_files }
     
     lib.evt.emit("firefox:dbs:delete", dest_db_files)
 
