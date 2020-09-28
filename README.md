@@ -13,3 +13,10 @@ Search through browser history
 - python3
 - geckodriver binary
 - pip
+- selenium with firefox driver
+- xapian for indexing
+
+### Todo
+- decouple the indexers from actual indexing
+- xapian db path, make configurable
+- enable search
