@@ -111,7 +111,7 @@ team==1.0
 texttable==1.6.3
 toml==0.10.1
 tqdm==4.49.0
-urllib3==1.25.10
+urllib3==1.26.5
 validictory==1.1.2
 virtualenv==20.0.25
 webencodings==0.5.1
