@@ -1,16 +1,27 @@
 from html.parser import HTMLParser
 import logging
 import re
-from io import StringIO
+# from io import StringIO
 
 reject_tag_list = ['head', 'title', 'link', 'style', 'script', 'br', 'template', 'img', 'script', 'iframe']
+
+class Parser:
+    def __init__(self):
+        self.p = NervousHTMLParser()
+
+    def parse(self, s: str):
+        self.p.feed(s)
+        return self
+
+    def get_data(self):
+        return self.p.get_data()
 
 class NervousHTMLParser(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
         self.reset()
         self.strict = False
-        self.convert_charrefs= True
+        self.convert_charrefs = True
         self.skip = False
         self.data = []
 
@@ -38,6 +49,7 @@ class NervousHTMLParser(HTMLParser):
 
     def get_data(self):
         return ' '.join(self.data)
+
 
 """
 

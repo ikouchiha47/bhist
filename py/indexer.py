@@ -3,7 +3,7 @@ import json
 from typing import List
 
 from .db import Bookmarks
-from .model import Bookmark
+from py.models.bookmark import Bookmark
 
 xdb = xapian.WritableDatabase('bookmarks_xapian', xapian.DB_CREATE_OR_OPEN)
 
@@ -59,6 +59,7 @@ def __index_bookmarks__(termgen, bookmarks: List[Bookmark]):
     for bookm in bookmarks:
         __index_bookmark__(termgen, bookm)
 
+
 def __index_bookmark__(termgen, bookmark: Bookmark):
     doc = xapian.Document()
     termgen.set_document(doc)
@@ -76,3 +77,5 @@ def __index_bookmark__(termgen, bookmark: Bookmark):
     idterm = u"Q" + f'{bookmark.id_type}_{bookmark._id}'
     doc.add_boolean_term(idterm)
     xdb.replace_document(idterm, doc)
+
+

@@ -1,6 +1,7 @@
 import sqlite3
 from typing import List
-from .model import Bookmark
+
+from py.models.bookmark import Bookmark
 
 limit = 20
 connection = sqlite3.connect("bookmarks_search.db")

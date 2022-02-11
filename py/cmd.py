@@ -1,6 +1,6 @@
 import platform
 import shutil
-import  sys
+import sys
 
 system = platform.system()
 
@@ -10,7 +10,11 @@ def chrome():
     if system == 'Darwin':
         return darwin_chrome
     if system == 'Linux':
-        return shutil.which('chrome') or shutil.which('google-chrome') or shutil.which('chromium')
+        return (
+                shutil.which('chrome') or
+                shutil.which('google-chrome') or
+                shutil.which('chromium')
+            )
 
     sys.exit('Life sucks, so does your os')
 
