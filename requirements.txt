@@ -77,7 +77,7 @@ PlexAPI==4.0.0
 ply==3.11
 proboscis==1.2.6.0
 progress==1.5
-protobuf==3.12.4
+protobuf==3.15.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycairo==1.19.1
