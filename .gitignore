@@ -1,6 +1,7 @@
 *.sqlite
 *__pycache__*
 *.log
-db/
 *.db
 bookmarks_xapian/
+tmp/*
+!tmp/.keep
