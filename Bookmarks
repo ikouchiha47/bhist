@@ -1,0 +1,166 @@
+{
+   "checksum": "c91a699955863327d120e92b5afce538",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13286322223239822",
+            "guid": "5ce265ab-718f-4633-a5ec-13cb2dff4988",
+            "id": "5",
+            "name": "Create a tag cloud with HTML and CSS - DEV Community",
+            "type": "url",
+            "url": "https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90"
+         }, {
+            "date_added": "13287493995570125",
+            "guid": "62fe9854-f411-4152-9666-ad72f1bb4dcb",
+            "id": "7",
+            "name": "Figma Total Rewards",
+            "type": "url",
+            "url": "https://www.figma.com/file/czlp5zCdC5oGrBXPGjq3Jo/Rewards-and-Offers---Production-Final?node-id=0%3A1"
+         }, {
+            "date_added": "13287754159909517",
+            "guid": "d5767fe4-5fec-4a46-aa76-9776f0ad4584",
+            "id": "9",
+            "name": "Effective_Modern_Vim_scripting_at_vimconf2018_for_PDF.pdf",
+            "type": "url",
+            "url": "https://vimconf.org/2018/slides/Effective_Modern_Vim_scripting_at_vimconf2018_for_PDF.pdf"
+         }, {
+            "date_added": "13288366175131703",
+            "guid": "49b35b9f-0972-4ab6-a112-3c55ec4e4e7f",
+            "id": "11",
+            "name": "James Routley | Let's hand write DNS messages",
+            "type": "url",
+            "url": "https://routley.io/posts/hand-writing-dns-messages/"
+         }, {
+            "date_added": "13288799470471352",
+            "guid": "d22c7c95-8f03-470a-b564-4038bd2de5d2",
+            "id": "12",
+            "name": "Hashrocket - Today I Learned",
+            "type": "url",
+            "url": "https://til.hashrocket.com/?_utf8=%E2%9C%93&q=xargs"
+         }, {
+            "date_added": "13288865934132297",
+            "guid": "a6ab768a-f789-4f05-8a21-e5079505ebb0",
+            "id": "14",
+            "name": "go - For loop that breaks after n amount of seconds - Stack Overflow",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/41738680/for-loop-that-breaks-after-n-amount-of-seconds"
+         }, {
+            "date_added": "13288873274462052",
+            "guid": "e50740d3-1540-44f6-a91f-892bca1d6e34",
+            "id": "15",
+            "name": "pointers - Hiding nil values, understanding why Go fails here - Stack Overflow",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/29138591/hiding-nil-values-understanding-why-go-fails-here/29138676#29138676"
+         }, {
+            "date_added": "13288886498091765",
+            "guid": "1dd44459-3e69-4cfd-89d9-96862835be96",
+            "id": "16",
+            "name": "AngularJS Git Commit Message Conventions",
+            "type": "url",
+            "url": "https://gist.github.com/stephenparish/9941e89d80e2bc58a153"
+         }, {
+            "date_added": "13288963295847261",
+            "guid": "3fe47e12-b1b5-46aa-9eae-ea3d0e915829",
+            "id": "17",
+            "name": "Integration testing for AWS Lambda in Go with Docker-compose | Buddy",
+            "type": "url",
+            "url": "https://buddy.works/tutorials/integration-testing-for-aws-lambda-in-go-with-docker-compose"
+         } ],
+         "date_added": "13282139612615015",
+         "date_modified": "13288975163681391",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13288975163681391",
+            "guid": "8d432e20-cb52-4f8e-b5bd-1d7c52bf1a31",
+            "id": "18",
+            "name": "Bash Functions | Linuxize",
+            "type": "url",
+            "url": "https://linuxize.com/post/bash-functions/"
+         }, {
+            "date_added": "13288977334451499",
+            "guid": "6c82a360-c5e3-4f1a-bc2b-b3928f403481",
+            "id": "19",
+            "name": "Python metaclasses by example - Eli Bendersky's website",
+            "type": "url",
+            "url": "https://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example/"
+         }, {
+            "date_added": "13288981427511598",
+            "guid": "e24aab4c-3efe-489a-993a-ad3af1f2a617",
+            "id": "20",
+            "name": "Get Started | Docs",
+            "type": "url",
+            "url": "https://docs.localstack.cloud/get-started/#localstack-cli"
+         }, {
+            "date_added": "13288993150739727",
+            "guid": "61088670-7179-4923-adcf-1a4e474b8433",
+            "id": "21",
+            "name": "AWS Lambda - use recursive function to process SQS messages (Part 1) | theburningmonk.com",
+            "type": "url",
+            "url": "https://theburningmonk.com/2016/04/aws-lambda-use-recursive-function-to-process-sqs-messages-part-1/"
+         }, {
+            "date_added": "13288993154975832",
+            "guid": "1a3df116-f047-4f44-b21b-50e147a8efc7",
+            "id": "22",
+            "name": "AWS Lambda – use recursive function to process SQS messages (Part 2) | theburningmonk.com",
+            "type": "url",
+            "url": "https://theburningmonk.com/2016/09/aws-lambda-use-recursive-function-to-process-sqs-messages-part-2/"
+         }, {
+            "date_added": "13288993169245933",
+            "guid": "da95fd92-0fd5-481f-aca7-031d80c2c862",
+            "id": "23",
+            "name": "Lessons learned from combining SQS and Lambda in a data project - Solita Data",
+            "type": "url",
+            "url": "https://data.solita.fi/lessons-learned-from-combining-sqs-and-lambda-in-a-data-project/"
+         }, {
+            "date_added": "13288994552192937",
+            "guid": "5fd96ee5-61c3-4cbe-a55d-fe35fe8caa1d",
+            "id": "24",
+            "name": "Metrics Collection at Scale: Learning from Uber's M3",
+            "type": "url",
+            "url": "https://www.infoq.com/news/2020/07/metrics-collection-uber/"
+         }, {
+            "date_added": "13289030253544698",
+            "guid": "8350ad26-f76a-43c2-adff-c9f821633dac",
+            "id": "25",
+            "name": "DNS Message — How to Read Query and Response Message | by Carson | Medium",
+            "type": "url",
+            "url": "https://cabulous.medium.com/dns-message-how-to-read-query-and-response-message-cfebcb4fe817"
+         }, {
+            "date_added": "13289032094311745",
+            "guid": "ee3a57c3-bd00-4dd0-957e-7dbb3a543590",
+            "id": "26",
+            "name": "Using Lambda with Amazon SQS - AWS Lambda",
+            "type": "url",
+            "url": "https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html"
+         }, {
+            "date_added": "13289044736847707",
+            "guid": "67104027-3caa-4394-aef2-9c36d270360d",
+            "id": "27",
+            "name": "About using Nix in my development workflow | by Jean-Philippe Cugnet | Medium",
+            "type": "url",
+            "url": "https://medium.com/@ejpcmac/about-using-nix-in-my-development-workflow-12422a1f2f4c"
+         } ],
+         "date_added": "13282139612615069",
+         "date_modified": "13289044736847707",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13282139612615076",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
