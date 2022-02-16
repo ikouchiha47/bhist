@@ -20,3 +20,4 @@ Search through browser history
 - decouple the indexers from actual indexing
 - xapian db path, make configurable
 - enable search
+- handle html parsing. (unexpected </ in html handle_endttag)
