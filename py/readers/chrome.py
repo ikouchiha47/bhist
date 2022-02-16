@@ -1,10 +1,14 @@
 import subprocess
 import os
 import json
+import asyncio
+
 from typing import List
+from concurrent.futures.thread import ThreadPoolExecutor
 
 from py.models.bookmark import Bookmark
-from py.utils import is_url, should_skip
+from py.utils import is_url, should_skip, chunker, run, flatten
+
 from py.cmd import chrome
 
 class Chrome:
@@ -13,12 +17,27 @@ class Chrome:
         self.parser = parser
         self.executable = chrome()
 
-    def get_bookmarks(self) -> List[Bookmark]:
+    def get_bookmarks(self, handler) -> List[Bookmark]:
         with open(self.filename, mode='r', encoding='utf-8') as f:
             jsonstr = f.read().strip()
 
         bookmarks = self.__get_bookmark_objects__(json.loads(jsonstr))
-        return self.__process_bookmarks__(bookmarks)
+        
+        executor = ThreadPoolExecutor(6)
+        loop = asyncio.get_event_loop()
+       
+        results = loop.run_until_complete(
+                run(executor, loop, chunker(bookmarks, 3), self.__process_bookmarks__))
+
+        res = flatten(results)
+        try:
+            handler(res)
+        except Exception as e:
+            print(e)
+
+        return res
+
+        # return self.__process_bookmarks__(bookmarks)
 
     def __get_bookmark_objects__(self, bms):
         root = bms["roots"]

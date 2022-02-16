@@ -8,12 +8,20 @@ reject_tag_list = ['head', 'title', 'link', 'style', 'script', 'br', 'template',
 class Parser:
     def __init__(self):
         self.p = NervousHTMLParser()
+        self.data = ""
 
     def parse(self, s: str):
-        self.p.feed(s)
+        try:
+            self.p.feed(s)
+        except Exception as e:
+            print(e)
+            self.data = s
+        
         return self
 
     def get_data(self):
+        if self.data:
+            return self.data
         return self.p.get_data()
 
 class NervousHTMLParser(HTMLParser):
@@ -36,6 +44,7 @@ class NervousHTMLParser(HTMLParser):
         self.skip = False
 
     def handle_endtag(self, tag):
+        # print(self.rawdata)
         if tag in reject_tag_list:
             self.skip = False
             return

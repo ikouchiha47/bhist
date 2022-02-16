@@ -62,6 +62,7 @@ def __index_bookmarks__(termgen, bookmarks: List[Bookmark]):
 
 def __index_bookmark__(termgen, bookmark: Bookmark):
     doc = xapian.Document()
+
     termgen.set_document(doc)
     termgen.index_text(bookmark.content, 1, 'S')
     termgen.index_text(bookmark.name, 1, 'S')
